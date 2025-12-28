@@ -1,59 +1,50 @@
-# TranslationFrontend
+# 🌍 Transhausa - Translation Services
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+A modern, responsive translation services website built with Angular, focused on presenting services in a clean and user-friendly way.
 
-## Development server
+🔗 Live Demo: https://transhausa.netlify.app
 
-To start a local development server, run:
+----------------------------------------------------------------------------------------------------------
+## ✨ Project Overview
 
-```bash
-ng serve
-```
+Transhausa is a frontend web application designed to present translation services with a modern UI and smooth user experience.
+The project is built as a single-page application (SPA) using Angular v20.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---------------------------------------------------------------------------------------------------------
 
-## Code scaffolding
+## 🚀 Key Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+✨ Modern, responsive UI
 
-```bash
-ng generate component component-name
-```
+📱 Mobile-first & cross-browser compatible
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🧭 Angular routing for smooth navigation
 
-```bash
-ng generate --help
-```
+🌐 Deployed with Netlify (CI/CD)
 
-## Building
+---------------------------------------------------------------------------------------------------------
 
-To build the project run:
+🖥️ Pages & Sections
 
-```bash
-ng build
-```
+Home - Почетна
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Services - Услуги
 
-## Running unit tests
+About us - За нас
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+--------------------------------------------------------------------------------------------------------
+## 🛠️ Tech Stack
 
-```bash
-ng test
-```
+- **Framework:** Angular
+- **Language:** TypeScript
+- **Styling:** Bootstrap
+- **Build Tool:** Angular CLI
+- **Package Manager:** npm
+- **Deployment & CI/CD:** Netlify
+-------------------------------------------------------------------------------------------------------
+🖼️ Screenshots
 
-## Running end-to-end tests
+![Hero Page](screenshots/hero-section.png)
+![Our story](screenshots/our-story.png)
+![Services page](screenshots/services.png)
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

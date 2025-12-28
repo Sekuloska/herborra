@@ -4,13 +4,15 @@ A modern, responsive translation services website built with Angular, focused on
 
 🔗 Live Demo: https://transhausa.netlify.app
 
-----------------------------------------------------------------------------------------------------------
+<br>
+
 ## ✨ Project Overview
 
 Transhausa is a frontend web application designed to present translation services with a modern UI and smooth user experience.
 The project is built as a single-page application (SPA) using Angular v20.
 
----------------------------------------------------------------------------------------------------------
+<br>
+
 
 ## 🚀 Key Features
 
@@ -22,9 +24,10 @@ The project is built as a single-page application (SPA) using Angular v20.
 
 🌐 Deployed with Netlify (CI/CD)
 
----------------------------------------------------------------------------------------------------------
+<br>
 
-🖥️ Pages & Sections
+
+## 🖥️ Pages & Sections
 
 Home - Почетна
 
@@ -32,7 +35,8 @@ Services - Услуги
 
 About us - За нас
 
---------------------------------------------------------------------------------------------------------
+<br>
+
 ## 🛠️ Tech Stack
 
 - **Framework:** Angular
@@ -41,10 +45,16 @@ About us - За нас
 - **Build Tool:** Angular CLI
 - **Package Manager:** npm
 - **Deployment & CI/CD:** Netlify
--------------------------------------------------------------------------------------------------------
-🖼️ Screenshots
+
+<br>
+
+## 🖼️ Screenshots
 
 ![Hero Page](screenshots/hero-section.png)
+<br>
+<br>
 ![Our story](screenshots/our-story.png)
+<br>
+<br>
 ![Services page](screenshots/services.png)
 

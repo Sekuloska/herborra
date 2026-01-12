@@ -3,7 +3,8 @@
     <div class="row align-items-center g-4 py-4 hero-intro">
       <div class="col-12 col-lg-6">
         <h1 class="hero-title mb-4 mt-0 fst-italic">
-          За љубовта кон <span class="hero-highlight">билниот</span> чај
+          {{'HEADERS.HERBAL_LOVE' | translate}} 
+          <span class="hero-highlight"> {{'HEADERS.HERBAL_LOVE1'  | translate }}</span> {{'HEADERS.HERBAL_LOVE2'  | translate}}
         </h1>
 
         <div class="d-flex flex-wrap gap-3 mb-3">
@@ -13,22 +14,28 @@
             class="consultation"
             role="button"
             aria-label="Контактирајте не преку email">
-            Контакт
+             {{'BUTTONS.CONTACT' | translate}} 
           </a>
 
           <button
             pButton
             type="button"
-            label="Услуги"
             class="services"
             routerLink="/services">
+             {{'BUTTONS.SERVICES' | translate}} 
           </button>
         </div>
       </div>
 
       <div class="col-12 col-lg-6">
         <div class="hero-image-wrapper">
-          <img src="assets/hero-section-macedonian.png" class="img-fluid image-hero" alt="Herborra hero">
+          <img
+            [src]="heroImageSrc"
+            class="img-fluid image-hero"
+            [attr.alt]="'HEADERS.HERBAL_LOVE' | translate"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high">
         </div>
       </div>
     </div>
@@ -37,14 +44,18 @@
 <section class="hero-sections p-5 mt-5">
     <div class="row align-items-center g-4 py-4">
       <div class="col-12 col-md-6 order-1 order-lg-1">
-        <img src="assets/images/hero-image1.png" class="img-fluid hero-image" alt="Natural ingredients">
+        <img
+          src="assets/images/hero-image1.png"
+          class="img-fluid hero-image"
+          [attr.alt]="'OUR_STORY.NATURAL_INGREDIENTS.TITLE' | translate"
+          loading="lazy"
+          decoding="async">
       </div>
       <div class="col-12 col-md-6 order-2 order-lg-2">
         <div class="hero-copy text-center text-lg-start">
-          <h2 class="hero-title mb-3">Природни состојки</h2>
+          <h2 class="hero-title mb-3"> {{'OUR_STORY.NATURAL_INGREDIENTS.TITLE' | translate}} </h2>
           <p class="hero-text mb-0">
-            Секоја состојка во нашите билни мешавини е внимателно одбрана и набавена за да се обезбеди чистота и ефикасност, 
-            овозможувајќи ви во секоја шолја да ја почувствувате вистинската сила на природата.
+           {{'OUR_STORY.NATURAL_INGREDIENTS.TEXT' | translate}}
           </p>
         </div>
       </div>
@@ -52,14 +63,18 @@
 
     <div class="row align-items-center g-4 py-4">
       <div class="col-12 col-md-6 order-1 order-lg-2">
-        <img src="assets/images/hero-image2.png" class="img-fluid hero-image" alt="Herbal tradition">
+        <img
+          src="assets/images/hero-image2.png"
+          class="img-fluid hero-image"
+          [attr.alt]="'OUR_STORY.HERBAL_TRADITION.TITLE' | translate"
+          loading="lazy"
+          decoding="async">
       </div>
       <div class="col-12 col-md-6 order-2 order-lg-1">
         <div class="hero-copy text-center text-lg-start">
-          <h2 class="hero-title mb-3">Билна традиција</h2>
+          <h2 class="hero-title mb-3"> {{'OUR_STORY.HERBAL_TRADITION.TITLE' | translate}}</h2>
           <p class="hero-text mb-0">
-            Ја почитуваме мудроста на традиционалните билни практики и ги подготвуваме нашите чаеви со почит кон културното
-             наследство и благотворните својства на овие проверени, природни состојки.
+          {{'OUR_STORY.HERBAL_TRADITION.TEXT' | translate}}
           </p>
         </div>
       </div>
@@ -67,14 +82,18 @@
 
     <div class="row align-items-center g-4 py-4">
       <div class="col-12 col-md-6 order-1 order-lg-1">
-        <img src="assets/images/hero-image3.png" class="img-fluid hero-image" alt="Community focus">
+        <img
+          src="assets/images/hero-image3.png"
+          class="img-fluid hero-image"
+          [attr.alt]="'OUR_STORY.COMMUNITY_FOCUS.TITLE' | translate"
+          loading="lazy"
+          decoding="async">
       </div>
       <div class="col-12 col-md-6 order-2 order-lg-2">
         <div class="hero-copy text-center text-lg-start">
-          <h2 class="hero-title mb-3">Фокус на заедницата</h2>
+          <h2 class="hero-title mb-3"> {{'OUR_STORY.COMMUNITY_FOCUS.TITLE' | translate}}</h2>
           <p class="hero-text mb-0">
-            Повеќе од чај – се стремиме да изградиме заедница што ги негува здравјето,
-            благосостојбата и природниот начин на живот, поддржувајќи се меѓусебно на патот кон подобро секојдневие.
+            {{'OUR_STORY.COMMUNITY_FOCUS.TEXT' | translate}}
           </p>
         </div>
       </div>

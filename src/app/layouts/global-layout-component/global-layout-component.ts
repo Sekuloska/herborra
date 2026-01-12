@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../header-component/header-component';
 import { FooterComponent } from '../footer-component/footer-component';
+import { I18nService } from '../../../services/i18n.service';
 
 
 @Component({
@@ -13,4 +14,12 @@ import { FooterComponent } from '../footer-component/footer-component';
 })
 export class GlobalLayoutComponent {
 
+   constructor(private i18n: I18nService) {}
+
+  ngOnInit() {
+    this.i18n.init();
+  }
+
 }
+
+

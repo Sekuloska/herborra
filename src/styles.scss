@@ -3,15 +3,11 @@
 @import "primeicons/primeicons.css";
 
 :root {
-    --font-family: "Lora", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  }
+  --font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --bs-body-font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
 
-  // body {
-  //   font-family: "Lora", "Poppins", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  // }
-
-
-  :root {
-    --bs-body-font-family: "Lora", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  }
+body {
+  font-family: var(--font-family);
+}
   

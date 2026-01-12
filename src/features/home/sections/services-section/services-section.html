@@ -7,19 +7,27 @@
                 <article class="service-card h-100">
 
                   <div class="service-card__headline">
-                    <img class="service-card__icon" src="assets/services/kidney.png">
-                    <h1 class="service-card__title">Природен билен чај за камен во бубрези</h1>
+                    <img
+                      class="service-card__icon"
+                      src="assets/services/kidney.png"
+                      [attr.alt]="'PRODUCTS.KIDNEY_TEA.TITLE' | translate"
+                      loading="lazy"
+                      decoding="async">
+                    <h1 class="service-card__title"> {{'PRODUCTS.KIDNEY_TEA.TITLE' | translate}} </h1>
                   </div>
                     
-                    <p class="service-card__text">Инспириран од традиционалните билни практики, овој природен чај е подготвен од внимателно одбрани билки кои традиционално се поврзуваат со благосостојбата на бубрезите и појавата на камења во бубрезите. 
-                      Нежна, растителна мешавина за оние кои преферираат природен начин на живот и почит кон вековната билна подготовка.</p>
+                    <p class="service-card__text">{{'PRODUCTS.KIDNEY_TEA.TEXT' | translate}} </p>
                     
                 </article>
             </div>
 
             <div class="col-12 col-lg-6">
                 <div class="service-media h-100">
-                  <img src="assets/services/bubrezi-mk.png" alt="Судски превод" />
+                  <img
+                    [src]="(kidneyImageSrc$ | async) ?? 'assets/services/bubrezi-mk.png'"
+                    [attr.alt]="'PRODUCTS.KIDNEY_TEA.TITLE' | translate"
+                    loading="lazy"
+                    decoding="async" />
                 </div>
             </div>
         </div>
@@ -28,7 +36,11 @@
             <!-- Image -->
             <div class="col-12 col-lg-6">
               <div class="service-media h-100">
-                <img src="assets/services/dijabet-mk.png" alt="Превод за веб страна" />
+                <img
+                  [src]="(diabetesImageSrc$ | async) ?? 'assets/services/dijabet-mk.png'"
+                  [attr.alt]="'PRODUCTS.DIABETES_TEA.TITLE' | translate"
+                  loading="lazy"
+                  decoding="async" />
               </div>
             </div>
       
@@ -37,12 +49,16 @@
               <article class="service-card h-100">
                 
                 <div class="service-card__headline">
-                    <img class="service-card__icon" src="assets/services/blood.png">
-                    <h1 class="service-card__title">Природен билен чај за дијабетес</h1>
+                    <img
+                      class="service-card__icon"
+                      src="assets/services/blood.png"
+                      [attr.alt]="'PRODUCTS.DIABETES_TEA.TITLE' | translate"
+                      loading="lazy"
+                      decoding="async">
+                    <h1 class="service-card__title"> {{'PRODUCTS.DIABETES_TEA.TITLE' | translate}} </h1>
                   </div>
                 <p class="service-card__text">
-                  Подготвен од внимателно одбрани растителни состојки, овој традиционален билен чај е наменет за лица со дијабетес кои преферираат природни производи и вековна билна подготовка. 
-                  Нежна, растителна мешавина, осмислена да се вклопи природно во балансиран начин на живот.
+                  {{'PRODUCTS.DIABETES_TEA.TEXT' | translate}}
                 </p>
               </article>
             </div>

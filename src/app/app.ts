@@ -1,7 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {ButtonModule} from 'primeng/button';
-import { GlobalLayoutComponent } from "./layouts/global-layout-component/global-layout-component";
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +9,9 @@ import { GlobalLayoutComponent } from "./layouts/global-layout-component/global-
   styleUrl: './app.scss'
 })
 export class App {
+  constructor(private seo: SeoService) {}
+
+  ngOnInit(): void {
+    this.seo.init();
+  }
 }

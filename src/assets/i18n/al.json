@@ -3,12 +3,15 @@
     "HOME": "Ballina",
     "OUR_STORY": "Historia jonë",
     "SERVICES": "Shërbime",
-    "CONTACT": "Kontakt"
+    "CONTACT": "Kontakt",
+    "ADRESS": "Crnogorska 4, Gjorche Petrov"
   },
 
   "HEADERS": {
-    "HERBAL_LOVE": "Për dashurinë ndaj çajit bimor"
-  },
+  "HERBAL_LOVE": "Për dashurinë ndaj",
+  "HERBAL_LOVE1": "çajit",
+  "HERBAL_LOVE2": "bimor"
+},
 
   "BUTTONS": {
     "CONTACT": "Kontakt",
@@ -68,6 +71,37 @@
     "DIABETES_TEA": {
       "TITLE": "Çaj bimor natyral për diabet",
       "TEXT": "I përgatitur nga përbërës bimorë të përzgjedhur me kujdes, ky çaj tradicional bimor është i dedikuar për personat me diabet që preferojnë produkte natyrale dhe përgatitje bimore tradicionale. Një përzierje e butë, me bazë bimore, e konceptuar për t’u integruar natyrshëm në një stil jetese të balancuar."
+    }
+  },
+  "SEO": {
+    "HOME": {
+      "TITLE": "Herborra | Pƒ<rzierje bimore",
+      "DESC": "Pƒ<rzierje bimore natyrale dhe receta tradicionale pƒ<r mirƒ<qenie tƒ< pƒ<rditshme."
+    },
+    "SERVICES": {
+      "TITLE": "Shƒ<rbime | Herborra",
+      "DESC": "Zbuloni pƒ<rzierje bimore pƒ<r veshka, diabet dhe mbƒ<shtetje tƒ< pƒ<rgjithshme."
+    },
+    "OUR_STORY": {
+      "TITLE": "Historia jonƒ< | Herborra",
+      "DESC": "Mƒ<soni mƒ< shumƒ< pƒ<r traditƒ<n dhe qasjen natyrore tƒ< Herborra."
+    },
+    "NOT_FOUND": {
+      "TITLE": "Faqja nuk u gjet | Herborra",
+      "DESC": "Faqja e kƒ<rkuar nuk ekziston."
+    },
+    "BUSINESS": {
+      "NAME": "Herborra",
+      "DESC": "Pƒ<rzierje bimore dhe mirƒ<qenie natyrore.",
+      "ADDRESS": "Crnogorska 4, Gjorche Petrov",
+      "CITY": "Shkup",
+      "PHONE": "+389 XX XXX XXX"
+    },
+    "PRODUCTS": {
+      "DEFAULT": {
+        "NAME": "Pƒ<rzierje bimore Herborra",
+        "DESC": "Pƒ<rzierje bimore natyrore tƒ< frymƒ<zuara nga tradita."
+      }
     }
   }
 }

@@ -1,0 +1,73 @@
+{
+  "NAVBAR": {
+    "HOME": "Ballina",
+    "OUR_STORY": "Historia jonë",
+    "SERVICES": "Shërbime",
+    "CONTACT": "Kontakt"
+  },
+
+  "HEADERS": {
+    "HERBAL_LOVE": "Për dashurinë ndaj çajit bimor"
+  },
+
+  "BUTTONS": {
+    "CONTACT": "Kontakt",
+    "SERVICES": "Shërbime"
+  },
+
+  "OUR_STORY": {
+    "NATURAL_INGREDIENTS": {
+      "TITLE": "Përbërës natyralë",
+      "TEXT": "Çdo përbërës në përzierjet tona bimore përzgjidhet dhe sigurohet me kujdes për të garantuar pastërti dhe cilësi, duke ju mundësuar të ndjeni fuqinë e vërtetë të natyrës në çdo filxhan."
+    },
+
+    "HERBAL_TRADITION": {
+      "TITLE": "Traditë bimore",
+      "TEXT": "Ne respektojmë mençurinë e praktikave tradicionale bimore dhe përgatisim çajrat tanë me respekt për trashëgiminë kulturore dhe vetitë e dobishme të këtyre përbërësve natyralë, të provuar ndër breza."
+    },
+
+    "COMMUNITY_FOCUS": {
+      "TITLE": "Fokus te komuniteti",
+      "TEXT": "Më shumë se çaj – synojmë të ndërtojmë një komunitet që vlerëson shëndetin, mirëqenien dhe stilin natyror të jetesës, duke u mbështetur reciprokisht drejt një përditshmërie më të mirë."
+    },
+
+    "DESCRIPTION": "Kujdesemi për traditën dhe natyrën, duke ofruar çajra bimorë të përgatitur me kujdes nga bimë të përzgjedhura. Herborra është e përkushtuar ndaj një qasjeje të thjeshtë, natyrale dhe të besueshme për mirëqenien e përditshme."
+  },
+
+  "FOOTER": {
+    "NAVIGATION": "Navigim",
+    "LOCATION": "Lokacioni"
+  },
+
+  "CORE_PRINCIPLES": {
+    "TITLE": "Parimet tona themelore",
+    "SUBTITLE": "Të udhëhequr nga natyra, të përkushtuar ndaj cilësisë",
+
+    "NATURAL_INGREDIENTS": {
+      "TITLE": "Përkushtim ndaj përbërësve natyralë",
+      "TEXT": "Ne besojmë se natyra ofron përbërësit më të mirë për shëndet dhe mirëqenie. Qasja jonë bazohet në përzgjedhjen e kujdesshme të përbërësve natyralë, me bazë bimore, ku çdo përzierje çaji përgatitet pa aditivë dhe konservues artificialë. Kjo qasje pasqyron respektin tonë për natyrën dhe synimin për të mbështetur një mënyrë jetese më të shëndetshme dhe më natyrale, të frymëzuar nga tradita bimore."
+    },
+
+    "TRADITION": {
+      "TITLE": "Respekt për traditën",
+      "TEXT": "Ne respektojmë traditën shekullore bimore, duke u mbështetur në njohuri dhe praktika të trashëguara ndër breza. Përzierjet tona të çajit frymëzohen nga mençuria tradicionale bimore dhe përgatiten me përkushtim dhe kujdes, në mënyrë që përvoja e së kaluarës të udhëheqë qasjen tonë ndaj mirëqenies moderne. Synojmë të ruajmë artin e çajit bimor dhe ta bëjmë atë të qasshëm për të gjithë."
+    },
+
+    "COMMUNITY_TRUST": {
+      "TITLE": "Komunitet dhe besim",
+      "TEXT": "Ndërtimi i besimit me klientët tanë është në zemër të punës sonë. Synojmë të krijojmë një mjedis të ngrohtë dhe të hapur, ku secili mund ta zgjedhë Herborra-n me besim si burim të mirëqenies bimore. Përmes kultivimit të komunitetit dhe një qasjeje transparente, synojmë të ofrojmë cilësi dhe autenticitet mbi të cilat mund të mbështeteni."
+    }
+  },
+
+  "PRODUCTS": {
+    "KIDNEY_TEA": {
+      "TITLE": "Çaj bimor natyral për gurë në veshka",
+      "TEXT": "I frymëzuar nga praktikat tradicionale bimore, ky çaj natyral përgatitet nga bimë të përzgjedhura me kujdes, të lidhura tradicionalisht me mirëqenien e veshkave dhe shfaqjen e gurëve në veshka. Një përzierje e butë, me bazë bimore, për ata që preferojnë një mënyrë jetese natyrale dhe respekt për përgatitjen tradicionale bimore."
+    },
+
+    "DIABETES_TEA": {
+      "TITLE": "Çaj bimor natyral për diabet",
+      "TEXT": "I përgatitur nga përbërës bimorë të përzgjedhur me kujdes, ky çaj tradicional bimor është i dedikuar për personat me diabet që preferojnë produkte natyrale dhe përgatitje bimore tradicionale. Një përzierje e butë, me bazë bimore, e konceptuar për t’u integruar natyrshëm në një stil jetese të balancuar."
+    }
+  }
+}

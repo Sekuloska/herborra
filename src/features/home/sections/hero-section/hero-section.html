@@ -1,56 +1,82 @@
-<section class="hero-section hero-section--divider">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                
-                <h1 class="hero-title mb-4 mt-0 fst-italic">Судски <span class="hero-highlight">преводи</span> со врвен квалитет </h1>
-                <p class="hero-subtitle mb-4">Вашите документи во сигурни раце – точни преводи од овластени судски преведувачи.
-                    </p>
-                    <p class="hero-note mb-3">
-                        Сертифицирани судски преведувачи со долгодогодишно искуство во професијата.
-                    </p>
 
+  <div class="container">
+    <div class="row align-items-center g-4 py-4 hero-intro">
+      <div class="col-12 col-lg-6">
+        <h1 class="hero-title mb-4 mt-0 fst-italic">
+          За љубовта кон <span class="hero-highlight">билниот</span> чај
+        </h1>
 
-                <div class="d-flex flex-wrap gap-3 mb-3">
-                    <button
-                    pButton
-                    type="button"
-                    label="Закажи консултација"
-                    class="consultation">
-                    </button>
+        <div class="d-flex flex-wrap gap-3 mb-3">
+          <a
+            pButton
+            [href]="mailtoLink"
+            class="consultation"
+            role="button"
+            aria-label="Контактирајте не преку email">
+            Контакт
+          </a>
 
-                    <button
-                    pButton
-                    type="button"
-                    label="Види ги нашите услуги"
-                    class="services"
-                    routerLink="/services"
-                ></button>
-
-                </div>
-
-                
-
-            </div>
-
-            <div class="col-12 col-lg-6">
-                <div class="hero-image-wrapper">
-                    <img src="assets/hero-section-image.jpg" class="img-fluid">
-                </div>
-            </div>
+          <button
+            pButton
+            type="button"
+            label="Услуги"
+            class="services"
+            routerLink="/services">
+          </button>
         </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero-section-macedonian.png" class="img-fluid image-hero" alt="Herborra hero">
+        </div>
+      </div>
     </div>
-</section>
+    </div>
 
-<section class="cta-section bg-dark text-white py-5">
-
-    <div class="container text-center">
-
-        <h4 class="mb-3 ">Сè уште барате некој што ќе ви помогне околу судски превод?</h4>
-        <p class="mb-4">
-            Дозволете ни да го направиме тоа брзо, сигурно и со 100% точност. 
-            Нашиот тим од овластени преведувачи е подготвен да ви помогне веднаш!
+<section class="hero-sections p-5 mt-5">
+    <div class="row align-items-center g-4 py-4">
+      <div class="col-12 col-md-6 order-1 order-lg-1">
+        <img src="assets/images/hero-image1.png" class="img-fluid hero-image" alt="Natural ingredients">
+      </div>
+      <div class="col-12 col-md-6 order-2 order-lg-2">
+        <div class="hero-copy text-center text-lg-start">
+          <h2 class="hero-title mb-3">Природни состојки</h2>
+          <p class="hero-text mb-0">
+            Секоја состојка во нашите билни мешавини е внимателно одбрана и набавена за да се обезбеди чистота и ефикасност, 
+            овозможувајќи ви во секоја шолја да ја почувствувате вистинската сила на природата.
           </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="row align-items-center g-4 py-4">
+      <div class="col-12 col-md-6 order-1 order-lg-2">
+        <img src="assets/images/hero-image2.png" class="img-fluid hero-image" alt="Herbal tradition">
+      </div>
+      <div class="col-12 col-md-6 order-2 order-lg-1">
+        <div class="hero-copy text-center text-lg-start">
+          <h2 class="hero-title mb-3">Билна традиција</h2>
+          <p class="hero-text mb-0">
+            Ја почитуваме мудроста на традиционалните билни практики и ги подготвуваме нашите чаеви со почит кон културното
+             наследство и благотворните својства на овие проверени, природни состојки.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center g-4 py-4">
+      <div class="col-12 col-md-6 order-1 order-lg-1">
+        <img src="assets/images/hero-image3.png" class="img-fluid hero-image" alt="Community focus">
+      </div>
+      <div class="col-12 col-md-6 order-2 order-lg-2">
+        <div class="hero-copy text-center text-lg-start">
+          <h2 class="hero-title mb-3">Фокус на заедницата</h2>
+          <p class="hero-text mb-0">
+            Повеќе од чај – се стремиме да изградиме заедница што ги негува здравјето,
+            благосостојбата и природниот начин на живот, поддржувајќи се меѓусебно на патот кон подобро секојдневие.
+          </p>
+        </div>
+      </div>
     </div>
 </section>

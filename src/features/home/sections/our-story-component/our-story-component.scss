@@ -1,43 +1,137 @@
-.story-section {
-    padding-block: 3rem 4rem;
-  }
+// .story-section {
+//     padding-block: 3rem 4rem;
+//   }
   
-  .story-title {
-    font-size: clamp(2rem, 1.8rem + 1vw, 2.6rem);
-    letter-spacing: 0.03em;
-  }
+//   .story-title {
+//     font-size: clamp(2rem, 1.8rem + 1vw, 2.6rem);
+//     letter-spacing: 0.03em;
+//   }
   
-  .story-title-highlight {
-    color: #F56FA1;
-    font-style: italic;
-  }
+//   .story-title-highlight {
+//     color: #879F3F;
+//     font-style: italic;
+//   }
   
-  /* ✅ default: full width (за <1200px) */
-  .story-text {
-    max-width: none;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #333;
-  }
+
+//   .story-text {
+//     max-width: none;
+//     font-size: 1rem;
+//     line-height: 1.7;
+//     color: #333;
+//   }
+
+//   @media (min-width: 1200px) {
+//     .story-text {
+//       max-width: 38rem;
+//     }
+//   }
   
-  /* ✅ max-width само кога си во 2 колони (xl+) */
-  @media (min-width: 1200px) {
-    .story-text {
-      max-width: 38rem;
-    }
-  }
+
+//   .story-logo {
+//     width: 100%;
+//     max-width: 520px;
+//     height: auto;
+//     border-radius: 20px;
+//   }
   
-  /* ✅ лого да не биде огромно */
-  .story-logo {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
+ 
+//   @media (max-width: 767.98px) {
+//     .story-logo {
+//       max-width: 280px;
+//     }
+//   }
+
+.core-principles-section {
+  background-color: #2d3339;
+  color: #ffffff;
+}
+
+.core-principles-header {
+  margin-bottom: 4rem;
+}
+
+.core-principles-title {
+  font-size: clamp(2.2rem, 1.8rem + 1.4vw, 3rem);
+  font-weight: 700;
+}
+
+.core-principles-subtitle {
+  font-size: 1.1rem;
+  color: #f5f5f5;
+}
+
+.core-principles-card {
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  will-change: transform;
+  opacity: 0;
+  transform: translateY(14px);
+  animation: corePrinciplesIn 0.6s ease forwards;
+}
+
+.core-principles-image {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.core-principles-card-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.core-principles-card-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #f0f0f0;
+}
+
+.core-principles-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+  border-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.core-principles-card:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+
+.core-principles-card:nth-of-type(2) {
+  animation-delay: 0.15s;
+}
+
+.core-principles-card:nth-of-type(3) {
+  animation-delay: 0.25s;
+}
+
+@keyframes corePrinciplesIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
   }
-  
-  /* мобилен: логото помало и центрирано */
-  @media (max-width: 767.98px) {
-    .story-logo {
-      max-width: 280px;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .core-principles-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .core-principles-card {
+    text-align: center;
+  }
+}
   

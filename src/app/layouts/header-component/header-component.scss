@@ -13,13 +13,44 @@
   .th-logo-text {
     font-weight: 800;
     letter-spacing: 0.08em;
-    color: #F56FA1;
+    color: #879F3F;
   }
   
-  .header-link:hover{
-    color: #ff4fa3;
+  .header-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .header-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #879F3F;
+    transition: width 0.25s ease;
+  }
+
+  .header-link:hover {
+    color: #879F3F;
     cursor: pointer;
-    text-decoration: underline;
+  }
+
+  .header-link:hover::after {
+    width: 100%;
+  }
+
+  .brand-logo{
+    height: 100px;
+    width: auto;         /* keeps proportions */
+    object-fit: contain;  /* safe for logos */
+    display: block;
+  }
+
+  .herborra-logo-wrapper {
+    gap: 0.1rem; /* Adjust this value as needed for desired spacing */
   }
   
   

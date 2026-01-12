@@ -1,33 +1,56 @@
-.services-section {
-    background: #fff;
+  .services-section {
+   background-color: #2d3339;
+  }
+
+  .services-section .container {
+    max-width: 1040px;
   }
   
   .service-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
+    background: #879F3F;
+    border: 1px solid #879F3F;
+    border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0,0,0,.06);
-    padding: 28px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease,
+      background-color 0.35s ease;
+    will-change: transform;
   }
   
-  .service-card__icon i {
-    font-size: 28px;
-    color: #111;
+  .service-card__emoji {
+    display: inline-flex;
+    font-size: 1.6rem;
+    line-height: 1;
+    transition: transform 0.35s ease, filter 0.35s ease;
+  }
+
+  .service-card__headline {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .service-card__icon {
+    width: 56px;
+    height: auto;
+    display: block;
   }
   
   .service-card__title {
-    font-size: 1.25rem;
-    margin: 0 0 10px;
+    font-size: 1.05rem;
+    margin: 0;
     color: #111;
+    font: italic;
   }
   
   .service-card__text {
     color: #444;
-    line-height: 1.7;
+    line-height: 1.6;
     margin: 0 0 14px;
-    max-width: 44ch;
+    max-width: 36ch;
   }
   
   .service-card__link {
@@ -38,11 +61,14 @@
   }
   
   .service-media {
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0,0,0,.06);
     background: #f6f6f6;
     height: 100%;
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+    will-change: transform;
   }
   
   .service-media img {
@@ -50,12 +76,98 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    min-height: 220px; /* за да личи како “картичка” и на мобилен */
+    min-height: 160px; /* за да личи како “картичка” и на мобилен */
+    transition: transform 0.35s ease, filter 0.35s ease;
+  }
+
+  .service-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0.12), rgba(0,0,0,0));
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,.14);
+    border-color: rgba(45, 51, 57, 0.35);
+    background-color: #8fa94a;
+  }
+
+  .service-card:hover .service-card__emoji {
+    transform: translateY(-2px) scale(1.08) rotate(-3deg);
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,.15));
+  }
+
+  .service-media:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 36px rgba(0,0,0,.18);
+    filter: brightness(1.05);
+  }
+
+  .service-media:hover::after {
+    opacity: 1;
+  }
+  .service-media:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.05) contrast(1.04);
+  }
+
+  .service-card__icon {
+    animation: serviceIconFloat 4s ease-in-out infinite;
+  }
+
+  .services-section .row > [class*='col-'] {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: servicesSectionIn 0.6s ease forwards;
+  }
+
+  .services-section .row:nth-of-type(1) > [class*='col-'] {
+    animation-delay: 0.05s;
+  }
+
+  .services-section .row:nth-of-type(2) > [class*='col-'] {
+    animation-delay: 0.15s;
+  }
+
+  @keyframes servicesSectionIn {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes serviceIconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .service-card,
+    .service-media,
+    .service-media img,
+    .service-media::after,
+    .service-card__emoji,
+    .service-card__icon,
+    .services-section .row > [class*='col-'] {
+      transition: none;
+      animation: none;
+      transform: none;
+      opacity: 1;
+    }
   }
   
   /* optional: на мобилен намали padding за да собере поубаво */
   @media (max-width: 575.98px) {
-    .service-card { padding: 20px; }
+    .service-card { padding: 16px; }
     .service-card__text { max-width: none; }
   }
   

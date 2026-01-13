@@ -26,7 +26,7 @@ export class HeroSection {
   private readonly body = encodeURIComponent(
     `Hello,
 
-I would like more information about Herborra products and services.
+I would like more information about the products and services.
 
 Thank you,
 `

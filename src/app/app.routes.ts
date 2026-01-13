@@ -15,7 +15,7 @@ export const routes: Routes = [
             titleKey: 'SEO.HOME.TITLE',
             descKey: 'SEO.HOME.DESC',
             canonicalPath: '/',
-            ogImage: '/assets/hero-section-image.jpg',
+            ogImage: '/assets/hero-section-macedonian.png',
             jsonLd: {
               type: 'LocalBusiness',
               nameKey: 'SEO.BUSINESS.NAME',

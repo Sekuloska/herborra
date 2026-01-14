@@ -1,4 +1,4 @@
-# Herborra - Herbal Tea Website
+# Herborra - Herbal Tea Website 🌿
 
 Live site: https://herborra.mk/
 

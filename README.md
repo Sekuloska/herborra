@@ -1,60 +1,36 @@
-# 🌍 Transhausa - Translation Services
+# Herborra - Herbal Tea Website
 
-A modern, responsive translation services website built with Angular, focused on presenting services in a clean and user-friendly way.
+Live site: https://herborra.mk/
 
-🔗 Live Demo: https://transhausa.netlify.app
+## Project Overview
 
-<br>
+Herborra is a single-page Angular application for a herbal tea brand. It focuses on a clean, responsive UI with Macedonian and Albanian language support.
 
-## ✨ Project Overview
+## Key Features
 
-Transhausa is a frontend web application designed to present translation services with a modern UI and smooth user experience.
-The project is built as a single-page application (SPA) using Angular v20.
+- Responsive layout with Bootstrap and PrimeNG components
+- Language switcher (MK/AL) with persisted preference
+- SEO meta tags, Open Graph, Twitter cards, and JSON-LD per route
+- Hero, Our Story, and Services sections with image assets
+- Header and footer with contact details, social links, and Google Maps embed
+- Not Found (404) page
 
-<br>
+## Pages & Sections
 
+- Home (hero + highlights)
+- Our Story (core principles)
+- Services (products)
 
-## 🚀 Key Features
+## Tech Stack
 
-✨ Modern, responsive UI
+- Angular 20
+- TypeScript
+- Bootstrap 5
+- PrimeNG + PrimeIcons
+- ngx-translate
 
-📱 Mobile-first & cross-browser compatible
+## Screenshots
 
-🧭 Angular routing for smooth navigation
+![Main page](photos/main-page.png)
 
-🌐 Deployed with Netlify (CI/CD)
-
-<br>
-
-
-## 🖥️ Pages & Sections
-
-Home - Почетна
-
-Services - Услуги
-
-About us - За нас
-
-<br>
-
-## 🛠️ Tech Stack
-
-- **Framework:** Angular
-- **Language:** TypeScript
-- **Styling:** Bootstrap
-- **Build Tool:** Angular CLI
-- **Package Manager:** npm
-- **Deployment & CI/CD:** Netlify
-
-<br>
-
-## 🖼️ Screenshots
-
-![Hero Page](screenshots/hero-section.png)
-<br>
-<br>
-![Our story](screenshots/our-story.png)
-<br>
-<br>
-![Services page](screenshots/services.png)
-
+![Our story](photos/our-story.png)

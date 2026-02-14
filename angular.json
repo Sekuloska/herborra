@@ -34,7 +34,9 @@
             ],
            
             "outputMode": "static",
-            "prerender": true,
+            "prerender": {
+              "discoverRoutes": true
+            },
             "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
               ]

@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, inject, PLATFORM_ID } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { map, startWith } from 'rxjs';
 
@@ -14,6 +14,7 @@ type Lang = 'mk' | 'al';
 })
 export class ServicesSection {
   private readonly translate = inject(TranslateService);
+  private readonly platformId = inject(PLATFORM_ID);
 
   private readonly kidneyImageByLang: Record<Lang, string> = {
     mk: 'assets/services/bubrezi-mk.png',
@@ -25,16 +26,17 @@ export class ServicesSection {
     al: 'assets/services/dijabet-al.png'
   };
 
+  
+  private getInitialLang(): string {
+    if (isPlatformBrowser(this.platformId)) {
+      return localStorage.getItem('lang') || this.translate.currentLang || this.translate.getBrowserLang() || 'mk';
+    }
+    return this.translate.currentLang || 'mk';
+  }
+
   readonly lang$ = this.translate.onLangChange.pipe(
     map((event) => this.normalizeLang(event.lang)),
-    startWith(
-      this.normalizeLang(
-        localStorage.getItem('lang') ||
-          this.translate.currentLang ||
-          this.translate.getBrowserLang() ||
-          'mk'
-      )
-    )
+    startWith(this.normalizeLang(this.getInitialLang()))
   );
 
   readonly kidneyImageSrc$ = this.lang$.pipe(

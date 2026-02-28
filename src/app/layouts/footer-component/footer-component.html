@@ -4,7 +4,7 @@
 
             <div class="columnOne col-12 col-lg-4">
                 <div class="image mb-3">
-                    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/">
+                    <a class="navbar-brand d-flex align-items-center gap-2" [routerLink]="['/', currentLang]">
                         <img height="32" src="assets/herborraLogo.png" class="brand-logo">
                         <span class="th-logo-text">HERBORRA</span>
                     </a>
@@ -49,9 +49,9 @@
             <div class="columnTwo col-12 col-md-4 col-lg-3">
                 <p class="mb-2"><strong>{{'FOOTER.NAVIGATION' | translate}} </strong></p>
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="/" class="footer-link" routerLink="/">{{'NAVBAR.HOME' | translate}}</a></li> 
-                    <li class="nav-item"><a  href="/our-story" class="footer-link" routerLink="/our-story">{{'NAVBAR.OUR_STORY' | translate}}</a></li>
-                    <li class="nav-item"><a class="footer-link" href="/services" routerLink="/services">{{'NAVBAR.SERVICES' | translate}}</a></li>
+                    <li class="nav-item"><a class="footer-link" [routerLink]="['/', currentLang]">{{'NAVBAR.HOME' | translate}}</a></li> 
+                    <li class="nav-item"><a class="footer-link" [routerLink]="['/', currentLang, 'our-story']">{{'NAVBAR.OUR_STORY' | translate}}</a></li>
+                    <li class="nav-item"><a class="footer-link" [routerLink]="['/', currentLang, 'services']">{{'NAVBAR.SERVICES' | translate}}</a></li>
                     
                 </ul>
             </div>

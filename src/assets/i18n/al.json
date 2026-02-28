@@ -76,16 +76,22 @@
   
   "SEO": {
   "HOME": {
-    "TITLE": "Çaj bimor natyral për gurë në veshka dhe diabet | Herborra",
-    "DESC": "Herborra ofron përzierje bimore natyrale: çaj për gurë dhe rërë në veshka dhe çaj për diabet – për ata që preferojnë një stil jete të balancuar."
+    "TITLE": "Ballina | Herborra - çaj natyral për gurë dhe rërë në veshka dhe çaj natyral për diabet",
+    "DESC": "Informacione për përzierjet tona bimore: çaj natyral për gurë dhe rërë në veshka dhe çaj për diabetin. Qasje tradicionale dhe bimë të përzgjedhura me kujdes.",
+    "KEYWORDS" : "Çaj natyral për gurë dhe rërë në veshka, çaj natyral kundër diabetit"
+    
   },
   "SERVICES": {
-    "TITLE": "Shërbime dhe informim për çajra bimorë | Herborra",
-    "DESC": "Informacione për përzierjet tona: çaj bimor për veshka (gurë/rërë) dhe çaj për diabet. Traditë bimore dhe përbërës të përzgjedhur me kujdes."
+    "TITLE": "Shërbime | Herborra - çaj natyral për gurë dhe rërë në veshka dhe çaj natyral për diabet",
+    "DESC": "Informacione për përzierjet tona: çaj bimor për veshka (gurë/rërë) dhe çaj për diabet. Traditë bimore dhe përbërës të përzgjedhur me kujdes.",
+    "KEYWORDS": "çaj për gurë në veshka  çaj për rërë në veshka çaj natyral për diabet çaj për balancimin e nivelit të sheqerit në gjak"
+    
   },
   "OUR_STORY": {
-    "TITLE": "Historia jonë dhe tradita bimore | Herborra",
-    "DESC": "Mësoni më shumë për Herborra: dashuria për çajin bimor, përgatitje tradicionale dhe përzierje natyrale për mirëqenie – veshkat dhe sheqerin në gjak."
+    "TITLE": "Historia jonë | Herborra - çaj natyral për gurë dhe rërë në veshka dhe çaj natyral për diabet",
+    "DESC": "Mësoni më shumë për Herborra: dashuria për çajin bimor, përgatitje tradicionale dhe përzierje natyrale për mirëqenie – veshkat dhe sheqerin në gjak.",
+    "KEYWORDS": "traditë me çajra bimorë kujdes natyral me bimë çaj familjar natyral"
+    
   },
   "NOT_FOUND": {
     "TITLE": "Faqja nuk u gjet | Herborra",
@@ -93,7 +99,7 @@
   },
   "BUSINESS": {
     "NAME": "Herborra",
-    "DESC": "Çajra bimorë natyralë: çaj për gurë në veshka dhe çaj për diabet. Përzierje tradicionale nga bimë të përzgjedhura me kujdes.",
+    "DESC": "Çajra natyralë bimorë: çaj për gurë dhe rërë në veshka dhe çaj për diabetin. Përzierje tradicionale nga bimë të përzgjedhura me kujdes.",
     "ADDRESS": "Crnogorska 4, Gjorçe Petrov",
     "CITY": "Shkup",
     "PHONE": "+389 78 867 827, +389 78 313 257"

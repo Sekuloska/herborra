@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://herborra.mk/</loc>
+    <loc>https://herborra.mk/mk</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://herborra.mk/mk" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://herborra.mk/al" />
   </url>
+
   <url>
-    <loc>https://herborra.mk/services</loc>
+    <loc>https://herborra.mk/al</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://herborra.mk/mk" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://herborra.mk/al" />
   </url>
+
   <url>
-    <loc>https://herborra.mk/our-story</loc>
+    <loc>https://herborra.mk/mk/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://herborra.mk/mk/services" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://herborra.mk/al/services" />
   </url>
+
+  <url>
+    <loc>https://herborra.mk/al/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://herborra.mk/mk/services" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://herborra.mk/al/services" />
+  </url>
+
+  <url>
+    <loc>https://herborra.mk/mk/our-story</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://herborra.mk/mk/our-story" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://herborra.mk/al/our-story" />
+  </url>
+
+  <url>
+    <loc>https://herborra.mk/al/our-story</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://herborra.mk/mk/our-story" />
+    <xhtml:link rel="alternate" hreflang="sq" href="https://herborra.mk/al/our-story" />
+  </url>
+
 </urlset>

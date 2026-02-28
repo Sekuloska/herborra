@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -9,4 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './not-found.component.html',
   styleUrl: './not-found.component.scss',
 })
-export class NotFoundComponent {}
+export class NotFoundComponent {
+  homeLink: string[] = ['/mk'];
+
+  constructor(private route: ActivatedRoute) {
+    const lang = this.route.snapshot.paramMap.get('lang');
+    this.homeLink = lang === 'al' ? ['/al'] : ['/mk'];
+  }
+}

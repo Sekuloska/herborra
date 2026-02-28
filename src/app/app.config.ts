@@ -1,26 +1,28 @@
-﻿import { ApplicationConfig, isDevMode, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { providePrimeNG } from 'primeng/config';
 import Lara from '@primeuix/themes/lara';
 import { provideHttpClient } from '@angular/common/http';
-import { TranslateHttpLoader, provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import {  
   MissingTranslationHandler,
   MissingTranslationHandlerParams,
   TranslateLoader,
+  provideTranslateLoader,
   provideTranslateService } from '@ngx-translate/core';
 
 import { routes } from './app.routes';
 import { IMAGE_CONFIG } from '@angular/common';
+import { StaticTranslateLoader } from '../services/static-translate.loader';
 
 
-//importProvidersFrom
-
-export function translateLoaderFactory() {
-  return new TranslateHttpLoader();
-}
-
-
+// export class DevMissingTranslationHandler implements MissingTranslationHandler {
+//   handle(params: MissingTranslationHandlerParams) {
+//     if (isDevMode()) {
+//       console.warn('[i18n] Missing translation key:', params.key);
+//     }
+//     return params.key;
+//   }
+// }
 
 export class DevMissingTranslationHandler implements MissingTranslationHandler {
   handle(params: MissingTranslationHandlerParams) {
@@ -38,30 +40,21 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     providePrimeNG({
       theme: {
-        preset: Lara, // рџЊћ Lara light РїРѕ РґРёС„РѕР»С‚
+        preset: Lara, // ???? Lara light ???? ?????�???�?�
         options: {
-          darkModeSelector: false // РѕСЃРёРіСѓСЂСѓРІР° РґРµРєР° Рµ СЃРІРµС‚Р»Р°
+          darkModeSelector: false // ?????????????????� ???�???� ?� ?????�?�?�?�
         }
       }
     }),
-    provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideTranslateService({
       fallbackLang: 'mk',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: translateLoaderFactory
-      },
-
-      missingTranslationHandler:{
+      loader: provideTranslateLoader(StaticTranslateLoader),
+      missingTranslationHandler: {
         provide: MissingTranslationHandler,
         useClass: DevMissingTranslationHandler
       }
-    }),
-    provideTranslateHttpLoader({
-      prefix: './assets/i18n/',
-      suffix: '.json'
     }),
     {
     provide: IMAGE_CONFIG,
@@ -75,5 +68,6 @@ export const appConfig: ApplicationConfig = {
     
   ]
 };
+
 
 

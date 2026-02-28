@@ -30,7 +30,5 @@ Herborra is a single-page Angular application for a herbal tea brand. It focuses
 - ngx-translate
 
 ## Screenshots
-
-![Main page](photos/main-page.png)
-
+![Main_Page] (photos/main-page.png)
 ![Our story](photos/our-story.png)
